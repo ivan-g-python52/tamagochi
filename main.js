@@ -13,7 +13,8 @@ function dise() {
     }
 }
 
-while (true) {
+let isRunning = true;
+while (isRunning) {
     const menu = `
     Ваш питомец:
     Голод: ${hunger}
@@ -46,6 +47,13 @@ while (true) {
             if (dise) {
                 hunger+=Math.floor(Math.random() * (5+1));
             }
+            break;
+        case '4':
+            isRunning = false;
+            alert('До свидания!')
+            break;
+        default:
+            alert('Ошибка ввода')
             break;
     }
     
