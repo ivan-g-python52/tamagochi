@@ -68,4 +68,7 @@ while (isRunning) {
     if (hunger===100 || happines===0 || heals===0) {
         alert('Ваш питомец умер!')
     }
+    hunger+=5;
+    happines-=5;
+    heals-=5;
 }
