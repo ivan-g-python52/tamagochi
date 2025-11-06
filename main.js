@@ -33,7 +33,14 @@ while (true) {
             if (dise) {
                 happines-=Math.floor(Math.random() * (5+1));
             }
-        break;
+            break;
+        
+        case '2':
+            happines+=Math.floor(Math.random() * (15-10+1))+10;
+            if (dise) {
+                hunger+=Math.floor(Math.random() * (5+1));
+            }
+            break;
     }
     
 }
