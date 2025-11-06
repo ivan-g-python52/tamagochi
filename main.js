@@ -41,6 +41,12 @@ while (true) {
                 hunger+=Math.floor(Math.random() * (5+1));
             }
             break;
+        case '3':
+            heals+=Math.floor(Math.random() * (15-10+1))+10;
+            if (dise) {
+                hunger+=Math.floor(Math.random() * (5+1));
+            }
+            break;
     }
     
 }
